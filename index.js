@@ -6,6 +6,7 @@ const errorHandler = require("./src/middlewares/errorHandler");
 
 const app = express();
 
+app.set("trust proxy", 1);
 app.use(express.json());
 
 connectDB(); // Connect to DB
